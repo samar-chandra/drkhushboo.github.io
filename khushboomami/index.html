@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dr. Khushboo Gynecologist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+
+<body>
+    <header>
+
+        <div class="marginalized" id="socialMedia">
+            <a target="_blank" href="https://www.facebook.com/khushboo.ray.52"><img src="./res/icons/fb.svg" /></a>
+            <a target="_blank" href="https://www.instagram.com/drkhushboo_gynecologist/"><img src="./res/icons/ig.svg" /></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC0bfu22BDbZL3CpQ3ikpXTw"><img src="./res/icons/yt.svg" /></a>
+            <a target="_blank" href="https://www.practo.com/patna/doctor/khushboo-10-gynecologist-obstetrician"><button
+                    class="button" id="floatRight">Book an Appointment</button></a>
+            <p id="floatRight" style="display: inline; margin-bottom: 10px;">Make an Appointment NOW! &nbsp</p>
+        </div>
+        <br>
+        <div class="marginalized">
+            <img style="height: 100px;" src="res/logo/logo.png" alt="Dr. Khushboo Logo" />
+            <p id="floatRight"><strong>Opening Hours:</strong><br>Mon–Fri: 9am–6pm; Sun: 10am–1pm</p>
+            <img id="floatRight" style="margin-top: 18px; margin-right: 5px; height: 30px;" src="./res/icons/clock.png"
+                alt="Phone number" />
+            <p id="floatRight" style="padding-right: 50px;"><strong>Call Today:</strong><br>8102418880</p>
+            <img id="floatRight" style="margin-top: 18px; margin-right: 5px;" src="./res/icons/wp.svg" alt="Phone number" />
+        </div>
+        <div style="text-align: center;">
+            <nav id="navbar">
+                <a id="navigation" href="./index.html">Home</a>
+                <a id="navigation" target="_blank" href="https://www.practo.com/patna/doctor/khushboo-10-gynecologist-obstetrician">Appointment</a>
+                <a id="navigation" href="#achievements">Accolades and Achievements</a>
+                <a id="navigation" href="#youtube">YouTube Videos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="./res/slideShowImages/a.jpg" style="width:80vw">
+            <div class="text"><img style="width: 400px;" src="./res/logo/logoIm.png" /></div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="./res/slideShowImages/b.jpg" style="width:80vw">
+            <div class="text"><img style="width: 400px;" src="./res/logo/logoIm.png" /></div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="./res/slideShowImages/c.jpg" style="width:80vw">
+            <div class="text"><img style="width: 400px;" src="./res/logo/logoIm.png" /></div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div id="achievements" class="marginalized">
+        <img style="width:500px;display: block;
+        margin-left: auto;
+        margin-right: auto;" src="res/achievementcardImages/achievements.png" />
+        <br>
+        <div id="card">
+            <img style="width:19vw;" src="res/achievementcardImages/ukshlogo.jpg" />
+            <p class="cardText">MBBS(Gold medalist),MS(Gold medalist),FIAOG
+                Advanced Diploma in ART & Reproductive medicineThe University of Schleswig Holstein KEIL GERMANY</p>
+        </div>
+        <div id="card">
+            <img style="width:19vw;" src="res/achievementcardImages/cclogo.jpg" />
+            <p class="cardText">Infertility & IVF
+                Trained in Andrology& ART from THE CLEVELAND CLINIC – American Society Of Reproductive</p>
+        </div>
+        <div id="card">
+            <img style="width:19vw;" src="res/achievementcardImages/yuvalogo.jpg" />
+            <p class="cardText">Faculty Speaker In Yuva fogsi, East zone Conference-2016.</p>
+        </div>
+        <div id="card">
+            <img style="width:19vw;" src="res/achievementcardImages/gfmconlogo.jpg" />
+            <p class="cardText">Conducted Quiz on Genetics and Fetal Medicine as Quiz Master at GFMCON 2018, Patna
+            </p>
+        </div>
+        <p style="text-align: center; font-size: xx-large; color: rgb(0, 164, 231);">More than 5 Publications In
+            National & International Journals</p>
+    </div>
+
+    <div id="youtube" class="marginalized">
+        <a target="_blank" href="https://www.youtube.com/channel/UC0bfu22BDbZL3CpQ3ikpXTw"><img style="width:500px;display: block;
+        margin-left: auto;
+        margin-right: auto;" src="res/icons/yt.png" /></a>
+        <br>
+        <iframe style="display: inline;" width="560" height="315" src="https://www.youtube.com/embed/w_GMAUTnZnY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe style="display: inline;" width="560" height="315" src="https://www.youtube.com/embed/DrAJSvvcKbA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <br>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
+    <footer style="background-color: #282C2F;padding: 50px;">
+        <div class="footerCard marginalized" style="display:inline-table;width: 20vw;">
+            <table style="display: inline-table;">
+                <tr>
+                    <td><img style="width: 50px;" src="res/icons/address.png" /></td>
+                    <td>
+                        <p style="display: inline; color:white;">Neelkanth Hospital, Patliputra Path, Near Telephone
+                            Exchange,
+                            <b>Rajendra Nagar,
+                                Patna, Bihar 800016</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img style="width: 50px;" src="res/icons/phone.png" /></td>
+                    <td>
+                        <p style="display: inline;color:white;"><b>8102418880</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img style="width: 50px;" src="res/icons/mail.png" /></td>
+                    <td>
+                        <p style="display: inline;color:rgba(0, 164, 231, 1);">samarc476@gmail.com</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="marginalized" style="float: right;">
+            <img src="./res/logo/logoIm.png" style="width: 20vw;" />
+                <p style="width: 20vw; text-align: center;color: white;"><b>IVF Consultant, Neelkanth Infertility & IVF Hospital, 
+                Patna
+                Visiting Consultant –Mediversalhospital, Patna</b></p>
+        </div>
+    </footer>
+    <div style="text-align: center; background-color: black;color: white;width: 100%;bottom: 0;">
+        Designed with <img style="width:20px" src="./res/heart.png"/> by Samar
+    </div>
+</body>
+
+</html>
